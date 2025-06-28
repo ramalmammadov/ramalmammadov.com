@@ -1,0 +1,42 @@
+{
+  "name": "canyon-club-marina-website",
+  "version": "1.0.0",
+  "description": "Professional website for Canyon Club Resort Marina - Cape May's Premier Full-Service Boating Facility",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000 -o",
+    "dev": "http-server -p 8000 -o -c-1",
+    "build": "echo 'No build process required for static site'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "marina",
+    "boating",
+    "cape-may",
+    "fishing",
+    "resort",
+    "responsive",
+    "website"
+  ],
+  "author": "Canyon Club Resort Marina",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canyon-club-marina/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/canyon-club-marina/website/issues"
+  },
+  "homepage": "https://canyonclubmarina.com",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 
