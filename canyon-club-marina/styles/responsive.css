@@ -1,0 +1,577 @@
+/* Responsive Design - Mobile First Approach */
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--navy-blue);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 1rem 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+    
+    .about-content,
+    .fishing-content,
+    .store-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .amenities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .tab-buttons {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .tab-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .event-date {
+        order: -1;
+        width: 100px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .nav-logo h2 {
+        font-size: 1.2rem;
+    }
+    
+    .about,
+    .marina,
+    .fishing,
+    .service,
+    .events,
+    .store,
+    .contact {
+        padding: 3rem 0;
+    }
+    
+    .about-content,
+    .fishing-content,
+    .store-content,
+    .contact-content {
+        gap: 1.5rem;
+    }
+    
+    .amenities-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .amenity-card {
+        padding: 1.5rem;
+    }
+    
+    .amenity-icon {
+        font-size: 2.5rem;
+    }
+    
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .event-card {
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .brand-logos {
+        justify-content: center;
+    }
+    
+    .slider-item {
+        flex: 0 0 150px;
+        height: 80px;
+        margin: 0 0.5rem;
+    }
+    
+    .slider-track {
+        width: calc(150px * 22);
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-150px * 11));
+        }
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-tagline {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-container {
+        padding: 0 10px;
+    }
+    
+    .nav-logo h2 {
+        font-size: 1rem;
+    }
+    
+    .about,
+    .marina,
+    .fishing,
+    .service,
+    .events,
+    .store,
+    .contact {
+        padding: 2rem 0;
+    }
+    
+    .about-content,
+    .fishing-content,
+    .store-content,
+    .contact-content {
+        gap: 1rem;
+    }
+    
+    .amenity-card {
+        padding: 1rem;
+    }
+    
+    .amenity-icon {
+        font-size: 2rem;
+    }
+    
+    .amenity-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .event-card {
+        padding: 1rem;
+    }
+    
+    .event-date {
+        width: 80px;
+        padding: 0.8rem;
+    }
+    
+    .event-date .month {
+        font-size: 1rem;
+    }
+    
+    .event-date .day {
+        font-size: 0.9rem;
+    }
+    
+    .event-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .store-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-details h3,
+    .contact-form h3 {
+        font-size: 1.1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .slider-item {
+        flex: 0 0 120px;
+        height: 60px;
+        margin: 0 0.3rem;
+    }
+    
+    .slider-track {
+        width: calc(120px * 22);
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-120px * 11));
+        }
+    }
+    
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+    
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .nav-logo h2 {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        padding: 0 8px;
+    }
+    
+    .nav-container {
+        padding: 0 8px;
+    }
+    
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .amenity-card {
+        padding: 0.8rem;
+    }
+    
+    .amenity-icon {
+        font-size: 1.8rem;
+    }
+    
+    .amenity-card h3 {
+        font-size: 1rem;
+    }
+    
+    .event-card {
+        padding: 0.8rem;
+    }
+    
+    .event-date {
+        width: 70px;
+        padding: 0.6rem;
+    }
+    
+    .event-date .month {
+        font-size: 0.9rem;
+    }
+    
+    .event-date .day {
+        font-size: 0.8rem;
+    }
+    
+    .slider-item {
+        flex: 0 0 100px;
+        height: 50px;
+        margin: 0 0.2rem;
+    }
+    
+    .slider-track {
+        width: calc(100px * 22);
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100px * 11));
+        }
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+        min-height: 400px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    
+    .nav-menu {
+        top: 60px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-image,
+    .about-img,
+    .fishing-img,
+    .service-img,
+    .store-img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .cta-button,
+    .hamburger {
+        display: none !important;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .hero-background {
+        display: none;
+    }
+    
+    .hero-content {
+        color: var(--text-dark);
+        padding: 2rem 0;
+    }
+    
+    .section-title {
+        color: var(--text-dark);
+    }
+    
+    .about,
+    .marina,
+    .fishing,
+    .service,
+    .events,
+    .store,
+    .contact {
+        background: white !important;
+        color: var(--text-dark);
+    }
+    
+    .amenity-card,
+    .event-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .tab-pane {
+        display: block !important;
+    }
+    
+    .tab-buttons {
+        display: none;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .slider-track {
+        animation: none;
+    }
+}
+
+/* Dark Mode Support */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --text-dark: #ffffff;
+        --text-light: #cccccc;
+        --sandy-beige: #2a2a2a;
+        --white: #1a1a1a;
+    }
+    
+    .about,
+    .fishing,
+    .events,
+    .contact {
+        background: var(--sandy-beige);
+    }
+    
+    .marina,
+    .service,
+    .store {
+        background: var(--white);
+    }
+    
+    .amenity-card,
+    .event-card {
+        background: var(--white);
+        color: var(--text-dark);
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        background: var(--white);
+        color: var(--text-dark);
+        border-color: var(--ocean-turquoise);
+    }
+}  */
