@@ -49,3 +49,23 @@ body {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-1vw) scale(1.2); }
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+
+.social-link {
+    color: #222;
+    transition: color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-link:hover, .social-link:focus {
+    color: #0078ff;
+    transform: scale(1.15);
+    outline: none;
+}
