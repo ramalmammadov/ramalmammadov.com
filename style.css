@@ -97,6 +97,6 @@ body {
     background: #0078ff;
     color: #fff;
     box-shadow: 0 4px 16px #0078ff33;
-    text-decoration: underline;
+/*     text-decoration: underline; */
     transform: scale(1.08);
 }
