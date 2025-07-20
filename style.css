@@ -29,7 +29,7 @@ body {
     display: inline-block;
     font-size: inherit;
     font-family: inherit;
-    color: #001d3d;
+    color: #7B0323;
     background: none;
     border-radius: 0;
     width: auto;
@@ -41,8 +41,8 @@ body {
 }
 
 #dot-link:hover .dot, #dot-link:focus .dot {
-    color: #0056b3;
-    text-shadow: 0 0 8px #0078ff88;
+    color: black;
+    text-shadow: 0 0 8px black;
 }
 
 @keyframes dot-bounce {
@@ -65,7 +65,7 @@ body {
 }
 
 .social-link:hover, .social-link:focus {
-    color: #0078ff;
+    color: #7B0323;
     transform: scale(1.15);
     outline: none;
 }
@@ -94,7 +94,7 @@ body {
 }
 
 .social-link.email-link:hover, .social-link.email-link:focus {
-    background: #0078ff;
+    background: #7B0323;
     color: #fff;
     box-shadow: 0 4px 16px #0078ff33;
 /*     text-decoration: underline; */
