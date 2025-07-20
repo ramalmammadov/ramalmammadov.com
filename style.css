@@ -69,3 +69,34 @@ body {
     transform: scale(1.15);
     outline: none;
 }
+
+.social-link.email-link {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0.3em 0.8em;
+    border-radius: 2em;
+    background: #f3f6fa;
+    color: #222;
+    text-decoration: none;
+    box-shadow: 0 2px 8px #0078ff11;
+    margin-left: 0.5vw;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    gap: 0.5em;
+}
+
+.social-link.email-link::before {
+    content: "\2709";
+    font-size: 1.1em;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-link.email-link:hover, .social-link.email-link:focus {
+    background: #0078ff;
+    color: #fff;
+    box-shadow: 0 4px 16px #0078ff33;
+    text-decoration: underline;
+    transform: scale(1.08);
+}
